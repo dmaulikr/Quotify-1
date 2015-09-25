@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EEC16491BB5A42700BA0D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC16481BB5A42700BA0D30 /* AppDelegate.swift */; };
+		8EEC164B1BB5A42700BA0D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC164A1BB5A42700BA0D30 /* ViewController.swift */; };
+		8EEC164E1BB5A42700BA0D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC164C1BB5A42700BA0D30 /* Main.storyboard */; };
+		8EEC16511BB5A42700BA0D30 /* Quotify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC164F1BB5A42700BA0D30 /* Quotify.xcdatamodeld */; };
+		8EEC16531BB5A42700BA0D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC16521BB5A42700BA0D30 /* Assets.xcassets */; };
+		8EEC16561BB5A42700BA0D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC16541BB5A42700BA0D30 /* LaunchScreen.storyboard */; };
+		8EEC16611BB5A42700BA0D30 /* QuotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC16601BB5A42700BA0D30 /* QuotifyTests.swift */; };
+		8EEC166C1BB5A42700BA0D30 /* QuotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC166B1BB5A42700BA0D30 /* QuotifyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EEC165D1BB5A42700BA0D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EEC163D1BB5A42700BA0D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EEC16441BB5A42700BA0D30;
+			remoteInfo = Quotify;
+		};
+		8EEC16681BB5A42700BA0D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EEC163D1BB5A42700BA0D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EEC16441BB5A42700BA0D30;
+			remoteInfo = Quotify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EEC16451BB5A42700BA0D30 /* Quotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEC16481BB5A42700BA0D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EEC164A1BB5A42700BA0D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EEC164D1BB5A42700BA0D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EEC16501BB5A42700BA0D30 /* Quotify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quotify.xcdatamodel; sourceTree = "<group>"; };
+		8EEC16521BB5A42700BA0D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EEC16551BB5A42700BA0D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EEC16571BB5A42700BA0D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEC165C1BB5A42700BA0D30 /* QuotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEC16601BB5A42700BA0D30 /* QuotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotifyTests.swift; sourceTree = "<group>"; };
+		8EEC16621BB5A42700BA0D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEC16671BB5A42700BA0D30 /* QuotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEC166B1BB5A42700BA0D30 /* QuotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotifyUITests.swift; sourceTree = "<group>"; };
+		8EEC166D1BB5A42700BA0D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EEC16421BB5A42700BA0D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEC16591BB5A42700BA0D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEC16641BB5A42700BA0D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EEC163C1BB5A42700BA0D30 = {
+			isa = PBXGroup;
+			children = (
+				8EEC16471BB5A42700BA0D30 /* Quotify */,
+				8EEC165F1BB5A42700BA0D30 /* QuotifyTests */,
+				8EEC166A1BB5A42700BA0D30 /* QuotifyUITests */,
+				8EEC16461BB5A42700BA0D30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EEC16461BB5A42700BA0D30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC16451BB5A42700BA0D30 /* Quotify.app */,
+				8EEC165C1BB5A42700BA0D30 /* QuotifyTests.xctest */,
+				8EEC16671BB5A42700BA0D30 /* QuotifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EEC16471BB5A42700BA0D30 /* Quotify */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC16481BB5A42700BA0D30 /* AppDelegate.swift */,
+				8EEC164A1BB5A42700BA0D30 /* ViewController.swift */,
+				8EEC164C1BB5A42700BA0D30 /* Main.storyboard */,
+				8EEC16521BB5A42700BA0D30 /* Assets.xcassets */,
+				8EEC16541BB5A42700BA0D30 /* LaunchScreen.storyboard */,
+				8EEC16571BB5A42700BA0D30 /* Info.plist */,
+				8EEC164F1BB5A42700BA0D30 /* Quotify.xcdatamodeld */,
+			);
+			path = Quotify;
+			sourceTree = "<group>";
+		};
+		8EEC165F1BB5A42700BA0D30 /* QuotifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC16601BB5A42700BA0D30 /* QuotifyTests.swift */,
+				8EEC16621BB5A42700BA0D30 /* Info.plist */,
+			);
+			path = QuotifyTests;
+			sourceTree = "<group>";
+		};
+		8EEC166A1BB5A42700BA0D30 /* QuotifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC166B1BB5A42700BA0D30 /* QuotifyUITests.swift */,
+				8EEC166D1BB5A42700BA0D30 /* Info.plist */,
+			);
+			path = QuotifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EEC16441BB5A42700BA0D30 /* Quotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEC16701BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "Quotify" */;
+			buildPhases = (
+				8EEC16411BB5A42700BA0D30 /* Sources */,
+				8EEC16421BB5A42700BA0D30 /* Frameworks */,
+				8EEC16431BB5A42700BA0D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quotify;
+			productName = Quotify;
+			productReference = 8EEC16451BB5A42700BA0D30 /* Quotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EEC165B1BB5A42700BA0D30 /* QuotifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEC16731BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "QuotifyTests" */;
+			buildPhases = (
+				8EEC16581BB5A42700BA0D30 /* Sources */,
+				8EEC16591BB5A42700BA0D30 /* Frameworks */,
+				8EEC165A1BB5A42700BA0D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EEC165E1BB5A42700BA0D30 /* PBXTargetDependency */,
+			);
+			name = QuotifyTests;
+			productName = QuotifyTests;
+			productReference = 8EEC165C1BB5A42700BA0D30 /* QuotifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EEC16661BB5A42700BA0D30 /* QuotifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEC16761BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "QuotifyUITests" */;
+			buildPhases = (
+				8EEC16631BB5A42700BA0D30 /* Sources */,
+				8EEC16641BB5A42700BA0D30 /* Frameworks */,
+				8EEC16651BB5A42700BA0D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EEC16691BB5A42700BA0D30 /* PBXTargetDependency */,
+			);
+			name = QuotifyUITests;
+			productName = QuotifyUITests;
+			productReference = 8EEC16671BB5A42700BA0D30 /* QuotifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EEC163D1BB5A42700BA0D30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Gabriele Gort";
+				TargetAttributes = {
+					8EEC16441BB5A42700BA0D30 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D6XJFZB79X;
+					};
+					8EEC165B1BB5A42700BA0D30 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D6XJFZB79X;
+						TestTargetID = 8EEC16441BB5A42700BA0D30;
+					};
+					8EEC16661BB5A42700BA0D30 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D6XJFZB79X;
+						TestTargetID = 8EEC16441BB5A42700BA0D30;
+					};
+				};
+			};
+			buildConfigurationList = 8EEC16401BB5A42700BA0D30 /* Build configuration list for PBXProject "Quotify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EEC163C1BB5A42700BA0D30;
+			productRefGroup = 8EEC16461BB5A42700BA0D30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EEC16441BB5A42700BA0D30 /* Quotify */,
+				8EEC165B1BB5A42700BA0D30 /* QuotifyTests */,
+				8EEC16661BB5A42700BA0D30 /* QuotifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EEC16431BB5A42700BA0D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEC16561BB5A42700BA0D30 /* LaunchScreen.storyboard in Resources */,
+				8EEC16531BB5A42700BA0D30 /* Assets.xcassets in Resources */,
+				8EEC164E1BB5A42700BA0D30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEC165A1BB5A42700BA0D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEC16651BB5A42700BA0D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EEC16411BB5A42700BA0D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEC164B1BB5A42700BA0D30 /* ViewController.swift in Sources */,
+				8EEC16511BB5A42700BA0D30 /* Quotify.xcdatamodeld in Sources */,
+				8EEC16491BB5A42700BA0D30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEC16581BB5A42700BA0D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEC16611BB5A42700BA0D30 /* QuotifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEC16631BB5A42700BA0D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEC166C1BB5A42700BA0D30 /* QuotifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EEC165E1BB5A42700BA0D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EEC16441BB5A42700BA0D30 /* Quotify */;
+			targetProxy = 8EEC165D1BB5A42700BA0D30 /* PBXContainerItemProxy */;
+		};
+		8EEC16691BB5A42700BA0D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EEC16441BB5A42700BA0D30 /* Quotify */;
+			targetProxy = 8EEC16681BB5A42700BA0D30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EEC164C1BB5A42700BA0D30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EEC164D1BB5A42700BA0D30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EEC16541BB5A42700BA0D30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EEC16551BB5A42700BA0D30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EEC166E1BB5A42700BA0D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EEC166F1BB5A42700BA0D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EEC16711BB5A42700BA0D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quotify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielegort.Quotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EEC16721BB5A42700BA0D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quotify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielegort.Quotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8EEC16741BB5A42700BA0D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielegort.QuotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotify.app/Quotify";
+			};
+			name = Debug;
+		};
+		8EEC16751BB5A42700BA0D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielegort.QuotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quotify.app/Quotify";
+			};
+			name = Release;
+		};
+		8EEC16771BB5A42700BA0D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QuotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielegort.QuotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Quotify;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8EEC16781BB5A42700BA0D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QuotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielegort.QuotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Quotify;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EEC16401BB5A42700BA0D30 /* Build configuration list for PBXProject "Quotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEC166E1BB5A42700BA0D30 /* Debug */,
+				8EEC166F1BB5A42700BA0D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEC16701BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "Quotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEC16711BB5A42700BA0D30 /* Debug */,
+				8EEC16721BB5A42700BA0D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EEC16731BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "QuotifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEC16741BB5A42700BA0D30 /* Debug */,
+				8EEC16751BB5A42700BA0D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EEC16761BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "QuotifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEC16771BB5A42700BA0D30 /* Debug */,
+				8EEC16781BB5A42700BA0D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EEC164F1BB5A42700BA0D30 /* Quotify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EEC16501BB5A42700BA0D30 /* Quotify.xcdatamodel */,
+			);
+			currentVersion = 8EEC16501BB5A42700BA0D30 /* Quotify.xcdatamodel */;
+			path = Quotify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8EEC163D1BB5A42700BA0D30 /* Project object */;
+}
