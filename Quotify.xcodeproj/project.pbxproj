@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1B01EE1BB68C4200DCF66D /* NewImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B01ED1BB68C4200DCF66D /* NewImagesCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8E1B01F21BB68F1200DCF66D /* Lambo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E1B01F11BB68F1200DCF66D /* Lambo.jpg */; settings = {ASSET_TAGS = (); }; };
 		8EEC16491BB5A42700BA0D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC16481BB5A42700BA0D30 /* AppDelegate.swift */; };
 		8EEC164E1BB5A42700BA0D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC164C1BB5A42700BA0D30 /* Main.storyboard */; };
 		8EEC16511BB5A42700BA0D30 /* Quotify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC164F1BB5A42700BA0D30 /* Quotify.xcdatamodeld */; };
@@ -14,6 +16,10 @@
 		8EEC16561BB5A42700BA0D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC16541BB5A42700BA0D30 /* LaunchScreen.storyboard */; };
 		8EEC16611BB5A42700BA0D30 /* QuotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC16601BB5A42700BA0D30 /* QuotifyTests.swift */; };
 		8EEC166C1BB5A42700BA0D30 /* QuotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC166B1BB5A42700BA0D30 /* QuotifyUITests.swift */; };
+		8EEC167C1BB5A7F400BA0D30 /* NewImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC167B1BB5A7F400BA0D30 /* NewImagesCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8EEC167E1BB5A84A00BA0D30 /* FinishedImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC167D1BB5A84A00BA0D30 /* FinishedImagesCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8EEC16801BB5A8C600BA0D30 /* EditImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC167F1BB5A8C600BA0D30 /* EditImagesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8EEC16821BB5A96B00BA0D30 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC16811BB5A96B00BA0D30 /* SettingsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E1B01ED1BB68C4200DCF66D /* NewImagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8E1B01F11BB68F1200DCF66D /* Lambo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lambo.jpg; sourceTree = "<group>"; };
 		8EEC16451BB5A42700BA0D30 /* Quotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEC16481BB5A42700BA0D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEC164D1BB5A42700BA0D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		8EEC16671BB5A42700BA0D30 /* QuotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEC166B1BB5A42700BA0D30 /* QuotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotifyUITests.swift; sourceTree = "<group>"; };
 		8EEC166D1BB5A42700BA0D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEC167B1BB5A7F400BA0D30 /* NewImagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		8EEC167D1BB5A84A00BA0D30 /* FinishedImagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		8EEC167F1BB5A8C600BA0D30 /* EditImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImagesViewController.swift; sourceTree = "<group>"; };
+		8EEC16811BB5A96B00BA0D30 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +111,13 @@
 			children = (
 				8EEC16481BB5A42700BA0D30 /* AppDelegate.swift */,
 				8EEC164C1BB5A42700BA0D30 /* Main.storyboard */,
+				8E1B01ED1BB68C4200DCF66D /* NewImagesCollectionViewCell.swift */,
+				8EEC16811BB5A96B00BA0D30 /* SettingsTableViewController.swift */,
+				8EEC167F1BB5A8C600BA0D30 /* EditImagesViewController.swift */,
+				8EEC167B1BB5A7F400BA0D30 /* NewImagesCollectionViewController.swift */,
+				8EEC167D1BB5A84A00BA0D30 /* FinishedImagesCollectionViewController.swift */,
 				8EEC16521BB5A42700BA0D30 /* Assets.xcassets */,
+				8E1B01F11BB68F1200DCF66D /* Lambo.jpg */,
 				8EEC16541BB5A42700BA0D30 /* LaunchScreen.storyboard */,
 				8EEC16571BB5A42700BA0D30 /* Info.plist */,
 				8EEC164F1BB5A42700BA0D30 /* Quotify.xcdatamodeld */,
@@ -232,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EEC16561BB5A42700BA0D30 /* LaunchScreen.storyboard in Resources */,
+				8E1B01F21BB68F1200DCF66D /* Lambo.jpg in Resources */,
 				8EEC16531BB5A42700BA0D30 /* Assets.xcassets in Resources */,
 				8EEC164E1BB5A42700BA0D30 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EEC16511BB5A42700BA0D30 /* Quotify.xcdatamodeld in Sources */,
+				8EEC16801BB5A8C600BA0D30 /* EditImagesViewController.swift in Sources */,
+				8EEC16821BB5A96B00BA0D30 /* SettingsTableViewController.swift in Sources */,
 				8EEC16491BB5A42700BA0D30 /* AppDelegate.swift in Sources */,
+				8E1B01EE1BB68C4200DCF66D /* NewImagesCollectionViewCell.swift in Sources */,
+				8EEC167E1BB5A84A00BA0D30 /* FinishedImagesCollectionViewController.swift in Sources */,
+				8EEC167C1BB5A7F400BA0D30 /* NewImagesCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +508,7 @@
 				8EEC16721BB5A42700BA0D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EEC16731BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "QuotifyTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +517,7 @@
 				8EEC16751BB5A42700BA0D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EEC16761BB5A42700BA0D30 /* Build configuration list for PBXNativeTarget "QuotifyUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +526,7 @@
 				8EEC16781BB5A42700BA0D30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -4,29 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Wkc-wz-CUf">
-            <objects>
-                <viewController id="X7e-Tq-i7S" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="onv-YN-4NY"/>
-                        <viewControllerLayoutGuide type="bottom" id="dys-vA-VwT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wsU-CS-3OS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5lJ-MP-Yrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2005" y="-735"/>
-        </scene>
-        <!--View Controller-->
+        <!--Edit Images View Controller-->
         <scene sceneID="Wes-Vg-4ay">
             <objects>
-                <viewController id="CdU-fV-0kz" sceneMemberID="viewController">
+                <viewController id="CdU-fV-0kz" customClass="EditImagesViewController" customModule="Quotify" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V90-UO-MHk"/>
                         <viewControllerLayoutGuide type="bottom" id="4xx-gS-eRV"/>
@@ -42,31 +23,41 @@
             </objects>
             <point key="canvasLocation" x="2005" y="472"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--New Images Collection View Controller-->
         <scene sceneID="fTs-nw-cyx">
             <objects>
-                <collectionViewController id="eyA-o6-cm7" sceneMemberID="viewController">
+                <collectionViewController id="eyA-o6-cm7" customClass="NewImagesCollectionViewController" customModule="Quotify" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vuW-VJ-2Bt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J2U-VQ-zHT">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="163" height="157"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RqH-ad-5Ai">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newImageCell" id="RqH-ad-5Ai" customClass="NewImagesCollectionViewCell" customModule="Quotify" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="163" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="163" height="157"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16556952756_6910cfbc8b_o.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XIO-8G-xzk">
+                                            <rect key="frame" x="0.0" y="0.0" width="163" height="157"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="newImageView" destination="XIO-8G-xzk" id="Bbg-HL-xLd"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -75,10 +66,14 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="ZzT-m7-Su4">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="UR9-7F-YXL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="UR9-7F-YXL">
+                            <connections>
+                                <action selector="addPicturesPressed:" destination="eyA-o6-cm7" id="eoT-8Q-kx4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Yxs-oi-oAD">
                             <connections>
-                                <segue destination="X7e-Tq-i7S" kind="show" id="JLV-Zn-GXg"/>
+                                <segue destination="sAk-X8-uVQ" kind="show" id="3r3-Sx-etN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -90,10 +85,41 @@
             </objects>
             <point key="canvasLocation" x="1205" y="-40"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Table View Controller-->
+        <scene sceneID="JdA-1W-Jc3">
+            <objects>
+                <tableViewController id="sAk-X8-uVQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hhE-3F-WXF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aO5-gN-heI">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aO5-gN-heI" id="WLm-b3-37S">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sAk-X8-uVQ" id="Shc-Yp-01l"/>
+                            <outlet property="delegate" destination="sAk-X8-uVQ" id="muY-5v-nhc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnu-yu-9j7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005" y="-727"/>
+        </scene>
+        <!--Finished Images Collection View Controller-->
         <scene sceneID="dm2-Fm-WcZ">
             <objects>
-                <collectionViewController id="kes-Ww-tbK" sceneMemberID="viewController">
+                <collectionViewController id="kes-Ww-tbK" customClass="FinishedImagesCollectionViewController" customModule="Quotify" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="95R-ql-9Q6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +219,10 @@
             <point key="canvasLocation" x="393" y="927"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="16556952756_6910cfbc8b_o.jpg" width="2000" height="1182"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Giv-hP-XEV"/>
+        <segue reference="Rkl-NM-dvM"/>
     </inferredMetricsTieBreakers>
 </document>
