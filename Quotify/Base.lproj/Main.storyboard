@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7T4-Ab-uwZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3GC-fA-BWE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -45,7 +45,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="163" height="157"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16556952756_6910cfbc8b_o.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XIO-8G-xzk">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lambo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XIO-8G-xzk">
                                             <rect key="frame" x="0.0" y="0.0" width="163" height="157"/>
                                             <animations/>
                                         </imageView>
@@ -73,12 +73,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Yxs-oi-oAD">
                             <connections>
-                                <segue destination="sAk-X8-uVQ" kind="show" id="3r3-Sx-etN"/>
+                                <segue destination="sAk-X8-uVQ" kind="show" identifier="showSettingsVC" id="3r3-Sx-etN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="CdU-fV-0kz" kind="show" id="Rkl-NM-dvM"/>
+                        <segue destination="CdU-fV-0kz" kind="show" identifier="showDetailVCFromNewImages" id="Rkl-NM-dvM"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVu-Rf-qMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,7 +95,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aO5-gN-heI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" id="aO5-gN-heI">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aO5-gN-heI" id="WLm-b3-37S">
@@ -131,7 +131,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="InK-lW-hxn">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="finishedImageCell" id="InK-lW-hxn">
                                 <rect key="frame" x="0.0" y="64" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -152,31 +152,12 @@
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="5Pg-0q-AwQ"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="CdU-fV-0kz" kind="show" id="Giv-hP-XEV"/>
+                        <segue destination="CdU-fV-0kz" kind="show" identifier="showDetailVCFromFinishImages" id="Giv-hP-XEV"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fso-i1-PNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1205" y="927"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="5Fp-MX-MuY">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7T4-Ab-uwZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="sLD-fj-yQj">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Wtn-yx-csR" kind="relationship" relationship="viewControllers" id="g3h-qj-bwS"/>
-                        <segue destination="Oe5-EU-7Oa" kind="relationship" relationship="viewControllers" id="mRc-Ez-PeQ"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iVf-Vc-5U9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-369" y="472"/>
         </scene>
         <!--New Images-->
         <scene sceneID="FGl-zp-9Dg">
@@ -198,11 +179,30 @@
             </objects>
             <point key="canvasLocation" x="393" y="-40"/>
         </scene>
-        <!--Final Images-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="eUG-79-JKv">
+            <objects>
+                <tabBarController id="3GC-fA-BWE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="lAo-E9-m4d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wtn-yx-csR" kind="relationship" relationship="viewControllers" id="8vy-ha-HYt"/>
+                        <segue destination="Oe5-EU-7Oa" kind="relationship" relationship="viewControllers" id="sWh-x2-hqN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uE2-cb-voM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="472"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="Vd6-Fg-qYw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oe5-EU-7Oa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Final Images" id="ooe-5l-jQD"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="AZw-2X-1zU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f6I-Zf-XBl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -220,9 +220,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="16556952756_6910cfbc8b_o.jpg" width="2000" height="1182"/>
+        <image name="Lambo.jpg" width="2000" height="1182"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rkl-NM-dvM"/>
+        <segue reference="Giv-hP-XEV"/>
     </inferredMetricsTieBreakers>
 </document>
